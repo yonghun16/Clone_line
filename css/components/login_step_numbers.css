@@ -1,0 +1,94 @@
+.welcome-header {
+  padding: 20px;
+}
+
+.welcome-header__title {
+  line-height: 1.3em;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.welcome-header__text {
+  font-size: 0.9em;
+  color: #929292;
+  margin-top: 10px;
+  line-height: 1.3em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.login-form span {
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  padding: 10px 0px;
+}
+
+.login-form__input-numbers {
+  width: 100%;
+  border: none; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+span > span {
+  text-decoration: underline;
+}
+
+.chk_box { 
+  display: block; 
+  position: relative; 
+  padding-left: 30px; 
+  margin-bottom: 10px; 
+  cursor: pointer; 
+  font-size: 14px; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+/* 기본 체크박스 숨기기 */
+.chk_box input[type="checkbox"] { 
+  display: none; 
+}
+
+/* 선택되지 않은 체크박스 스타일 꾸미기 */
+.on { 
+  width: 22px; 
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 2px #ededed;
+  border-radius: 20px;
+}
+
+/* 선택된 체크박스 스타일 꾸미기 */
+.chk_box input[type="checkbox"]:checked + .on {
+  background: #4dc764;
+}
+.on:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.chk_box input[type="checkbox"]:checked + .on:after {
+  display: block;
+}
+.on:after { 
+  width: 5px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 7px;
+  top: 4px;
+}

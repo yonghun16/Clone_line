@@ -4,12 +4,15 @@
 
 /* Components */
 @import "components/status-bar.css";
+@import "components/login_step_numbers.css";
+@import "components/top-buttons.css";
+
 
 /* Screens */
 
 body {
   color: #2e3633;
-  font-family:-apple-system, BlinkMacSystemFont, Ubuntu, 'Open Sans';
+  font-family: 'Open Sans';
   height: 1000vh;
 }
 

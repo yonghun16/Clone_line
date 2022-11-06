@@ -15,24 +15,31 @@
       </div>
       <div class="status-bar__column">
         <span>100%</span>
-        <img class="fiveg-icon" src="img/icons/5g.svg" />
-        <img class="coverage-level-icon" src="img/icons/coverage-level.svg" />
-        <img class="bettery-icon" src="img/icons/battery.svg"/>
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-battery-full"></i>
+      </div>
+    </div>
+
+    <div class="top-buttons">
+      <div class="top-buttons__column">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="top-buttons__column">
+        <i class="fa-regular fa-circle-question"></i>
       </div>
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Email이나 기기 전화번호를 입력해 주세요. </h1>
-      <p class="welcome-header__text">다음 사항에 동의할 경우 Email이나 기기 전화번호를 입력하고 화살표 아이콘을 탭해주세요</p>
+      <h1 class="welcome-header__title">기기 전화번호를 <br>입력해 주세요. </h1>
+      <p class="welcome-header__text">다음 사항에 동의할 경우 기기 전화번호를 입력하고 화살표 아이콘을 탭해주세요</p>
     </header>
 
     <form class="login-form"> 
-      <input type="text" placeholder="Email 또는 기기 전화번호" />
-      <input type="password" placeholder="패스워드" />
-      <input type="checkbox" />만 14세 이상입니다.
-      <input type="checkbox" />RINE <span>이용약관</span>에 동의합니다.
-      <input type="checkbox" />RINE <span>개인정보 처리방침</span>에 동의합니다.
-      <input type="submit" value="→">
+      <span><input class=login-form__input-numbers type="text" required placeholder="기기 전화번호" /></span>
+      <span><label class="chk_box"><input type="checkbox" /><span class="on"></span>만 14세 이상입니다.</label></span>
+      <span><label class="chk_box"><input type="checkbox" /><span class="on"></span>RINE <span>이용약관</span>에 동의합니다.</label></span>
+      <span><label class="chk_box"><input type="checkbox" /><span class="on"></span>RINE <span>개인정보 처리방침</span>에 동의합니다.</label></span>
+      <span><label class="chk_box"><input type="submit" value="→" /></label></span>
     </form>
   </body>
 </html>
